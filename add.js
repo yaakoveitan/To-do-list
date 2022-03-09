@@ -10,9 +10,12 @@ List.addEventListener('click', editItem);
 function editItem(event){
 	const item = event.target;
 	//if delete button was clicked, remove list item
-	if(item.classList[0] === "delete-item"){
-		const x = item.parentElement;
-		x.remove();
+	if((item.classList[0] === "delete-item") && (confirm("Are you sure?") == true)){
+		
+			const x = item.parentElement;
+			x.remove();
+		
+		
 	//if complete button was clicked, mark list item as completed
 	}else if(item.classList[0] === "complete-item"){
 		const x = item.parentElement;
