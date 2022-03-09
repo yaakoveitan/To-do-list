@@ -1,0 +1,67 @@
+ul {
+	list-style-type: none;
+	align-items:center;
+}
+div{
+	text-align:center;
+}
+.todo{
+	position: relative;
+	display:flex;
+	background-color:white;
+	margin-bottom:6px;
+	margin-left:25%;
+	margin-right:26%;
+	border-radius: 50px 15px;
+	justify-content: right;
+}
+.list-item{
+	width: 300px;
+}
+.list-item-date{
+	width:150px;
+	margin-right:10%;
+}
+
+.complete-item{
+	background-color:#32de84;
+	bordor-radius:5px;
+}
+.delete-item{
+	background-color:red;
+	bordor-radius:5px;
+}
+
+.high-priority{
+	color: red;
+}
+.low-priority{
+	color: blue;
+}
+
+
+
+
+body {
+  display:flex; 
+  flex-direction:column; 
+  justify-content:center;
+  min-height:100vh;
+  background-color:#9755EE;
+}
+
+.completed{
+	text-decoration: line-through;
+	opacity: 0.4;
+}
+
+form{
+	height:50px;
+	font-size:20px;
+	display:inline-block;
+	text-align:center;
+}
+
+.input, .date-input, .priority-input, .new-list-item{
+	border-radius: 10px;
+}
